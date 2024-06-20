@@ -41,5 +41,6 @@ export type SocialMedia =
   | "Skype"
   | "Steam"
   | "Telegram"
-  | "Mastodon";
+  | "Mastodon"
+  | "Lattes";
 ("RSS");
