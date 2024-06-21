@@ -1,3 +1,3 @@
-# mckerlie.com
+# berlotto.me
 
-Personal website for Adam McKerlie, visit it at https://mckerlie.com
+Personal website for Sérgio Berlotto, visit it at https://berlotto.me
