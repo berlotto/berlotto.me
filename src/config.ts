@@ -1,7 +1,7 @@
 import type { Site, SocialObjects } from "./types";
 
 export const SITE: Site = {
-  website: "https://berlotto.me/",
+  website: "https://berlotto.me",
   author: "Sérgio Berlotto",
   desc: "De código a gestão: navegando pelo universo da engenharia de software, arquitetura e soluções práticas.",
   title: "berlotto.me",
@@ -23,7 +23,7 @@ export const SITE: Site = {
 export const LOCALE = ["pt-BR"]; // set to [] to use the environment default
 
 export const LOGO_IMAGE = {
-  enable: false,
+  enable: true,
   svg: true,
   width: 216,
   height: 46,

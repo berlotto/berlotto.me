@@ -11,6 +11,8 @@ export interface Props {
   post: CollectionEntry<"posts">;
 }
 
+export const prerender = true;
+
 export async function getStaticPaths() {
   const posts = await getCollection("posts", ({ data }) => !data.draft);
 

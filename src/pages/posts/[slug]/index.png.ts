@@ -3,6 +3,8 @@ import { getCollection, type CollectionEntry } from "astro:content";
 import { generateOgImageForPost } from "@utils/generateOgImages";
 import slugify from "@utils/slugify";
 
+export const prerender = true;
+
 export async function getStaticPaths() {
   const posts = await getCollection("posts").then(p =>
     p.filter(({ data }) => !data.draft && !data.ogImage)
@@ -15,6 +17,9 @@ export async function getStaticPaths() {
 }
 
 export const GET: APIRoute = async ({ props }) =>
-  new Response(await generateOgImageForPost(props as CollectionEntry<"posts">), {
-    headers: { "Content-Type": "image/png" },
-  });
+  new Response(
+    await generateOgImageForPost(props as CollectionEntry<"posts">),
+    {
+      headers: { "Content-Type": "image/png" },
+    }
+  );

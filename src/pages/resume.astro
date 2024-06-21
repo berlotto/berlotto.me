@@ -1,0 +1,40 @@
+---
+import { SITE } from "@config";
+import Layout from "@layouts/Layout.astro";
+import Header from "@components/Header.astro";
+import Footer from "@components/Footer.astro";
+import Main from "@layouts/Main.astro";
+---
+
+<Layout title={`Resume | ${SITE.author}`}>
+
+    <Header activeNav="resume" />
+    <Main pageTitle="Quem é Sérgio H. Berlotto Jr ?" pageDesc="Sobre mim...">
+        <div class="text-justify leading-7">
+        <p>Sou natural de Gravataí, RS, onde iniciei minha jornada na tecnologia, moro em Joinville atualmente com minha família. 
+            Desde 1999, quando me formei como 
+            Técnico em Processamento de Dados, mergulhei no mundo da programação e nunca mais saí. Sou entusiasta e 
+            defensor fervoroso do Linux e de softwares de código aberto, possuindo profundo conhecimento nessa plataforma.</p>
+        
+        <p>Atualmente, sou arquiteto de software e desenvolvedor Python e encontro grande satisfação no que faço. 
+            Tenho orgulho de ser co-fundador do grupo de usuários Python do RS - PyTchê, além de ter contribuído com o Grupo de 
+            Usuários Linux do RS - TchêLinux, onde ministrei diversas palestras e cursos online.</p>
+        
+        <p>Na minha posição atual como Tech Lead na Jetbov, lidero a equipe de engenharia e desenvolvimento. Sou responsável pela 
+            implementação de estratégias para o desenvolvimento do time e atingimento de metas por parte da equipe. 
+            Meu trabalho inclui também a construção de data warehouses e pipelines de dados, garantindo a eficiência e a escalabilidade dos processos. 
+            Também atuo com metologias ágeis, experimentações, e em definir indicadores e assegurar a aplicação do processo ágil, sempre focado 
+            em entregar soluções de alta qualidade e alinhadas com as necessidades do negócio.</p>
+        
+        <p>Minha trajetória me levou a posições de liderança, onde dirijo equipes de engenharia e desenvolvimento de produtos. 
+            Sou conhecido por minha habilidade em liderar projetos de alta complexidade, implementando soluções inovadoras e eficientes.</p>
+        
+        <p>Além da minha carreira profissional, sou chefe escoteiro há mais de 5 anos no G.E. Príncipe de Joinville. 
+            Nos meus momentos de lazer, gosto de assar churrasco para amigos e colegas, apreciar uma boa cerveja artesanal 
+            e torcer pelo S.C. Internacional.</p>
+        </div>
+
+    </Main>
+<Footer />
+</Layout>
+

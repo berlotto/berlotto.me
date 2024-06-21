@@ -16,9 +16,12 @@ const { noMarginTop = false } = Astro.props;
   <div class="footer-wrapper">
     <Socials centered />
     <div class="copyright-wrapper">
-      <span>Copyright &#169; {currentYear}</span>
-      <span class="separator">&nbsp;|&nbsp;</span>
-      <span>All rights reserved.</span>
+      <span class="text-pretty">
+        {currentYear} | 
+        O conteúdo de <a property="dct:title" rel="cc:attributionURL" href="https://berlotto.me">berlotto.me</a>, por 
+        <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://www.linkedin.com/in/sergioberlotto/">Sérgio Berlotto</a> 
+        é licensiado sob <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.pt-br?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">
+        CC BY-NC-SA 4.0</span>
     </div>
   </div>
 </footer>

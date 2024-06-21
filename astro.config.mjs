@@ -8,7 +8,7 @@ import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import { autolinkConfig } from './plugins/rehype-autolink-config';
 import sitemap from "@astrojs/sitemap";
 import mdx from '@astrojs/mdx';
-
+import vercel from '@astrojs/vercel/serverless';
 
 // https://astro.build/config
 export default defineConfig({
@@ -38,4 +38,8 @@ export default defineConfig({
     }
   },
   scopedStyleStrategy: "where",
+  output: 'server',
+  adapter: vercel({
+    webAnalytics: { enabled: true }
+  }),
 });
