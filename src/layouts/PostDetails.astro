@@ -22,7 +22,7 @@ const { post, allPosts } = Astro.props;
 const { title, author, description, ogImage, canonicalURL, date, tags } =
   post.data;
 
-const { Content } = await post.render();
+const { Content, remarkPluginFrontmatter } = await post.render();
 
 const slug = slugify(post.data);
 
@@ -58,12 +58,10 @@ const relatedPosts = getRelatedPosts(allPosts, slug, tags);
   </div>
   <main id="main-content">
     <h1 transition:name={slug} class="post-title">{title}</h1>
+    
+    <p class="my-2">{remarkPluginFrontmatter.minutesRead}</p>
     <Datetime datetime={date} size="lg" className="my-2" />
-    <SocialShare
-      description={description}
-      via={SITE.twitterAccount}
-      title={title}
-    />
+     
     <article id="article" role="article" class="prose mx-auto mt-8 max-w-3xl">
       <Content />
     </article>
@@ -71,7 +69,13 @@ const relatedPosts = getRelatedPosts(allPosts, slug, tags);
     <ul class="tags-container">
       {tags.map(tag => <Tag name={slugifyStr(tag)} />)}
     </ul>
-    
+
+    <SocialShare
+      description={description}
+      via={SITE.twitterAccount}
+      title={title}
+    />
+
     <h2  class="post-title">Postagens relacionadas</h2>
     <ul class="related-posts">
       {relatedPosts.map(post => <Card

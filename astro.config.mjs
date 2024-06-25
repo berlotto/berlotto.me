@@ -9,6 +9,8 @@ import { autolinkConfig } from './plugins/rehype-autolink-config';
 import sitemap from "@astrojs/sitemap";
 import mdx from '@astrojs/mdx';
 import vercel from '@astrojs/vercel/serverless';
+import { remarkReadingTime } from './plugins/remark-reading-time.mjs';
+
 
 // https://astro.build/config
 export default defineConfig({
@@ -22,8 +24,8 @@ export default defineConfig({
     mdx(),
   ],
   markdown: {
-    remarkPlugins: [remarkToc, [remarkCollapse, {
-      test: "Table of contents"
+    remarkPlugins: [remarkReadingTime, remarkToc, [remarkCollapse, {
+      test: "Índice"
     }]],
     rehypePlugins: [rehypeSlug, [rehypeAutolinkHeadings, autolinkConfig]],
     shikiConfig: {

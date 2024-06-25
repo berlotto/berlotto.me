@@ -18,6 +18,8 @@ tags:
   ]
 ---
 
+# Intro
+
 Quando se trata de armazenamento de dados, o cenário atual oferece uma variedade de opções, cada uma com suas características únicas e casos de uso específicos. Escolher o banco de dados certo para seu projeto pode ser a diferença entre um sistema eficiente e robusto e um cheio de gargalos e problemas. Neste post, vamos explorar diversos tipos de armazenamento de dados, entendendo suas particularidades e como escolher a melhor opção para suas necessidades.
 
 ---
