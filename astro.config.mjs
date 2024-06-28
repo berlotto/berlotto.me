@@ -11,18 +11,15 @@ import mdx from '@astrojs/mdx';
 import vercel from '@astrojs/vercel/serverless';
 import { remarkReadingTime } from './plugins/remark-reading-time.mjs';
 
+import astroD2 from 'astro-d2'
 
 // https://astro.build/config
 export default defineConfig({
   site: "https://berlotto.me",
   // replace this with your deployed domain
   integrations: [tailwind({
-      applyBaseStyles: false
-    }),
-    react(),
-    sitemap(),
-    mdx(),
-  ],
+    applyBaseStyles: false
+  }), react(), sitemap(), mdx(), astroD2()],
   markdown: {
     remarkPlugins: [remarkReadingTime, remarkToc, [remarkCollapse, {
       test: "Índice"
@@ -42,6 +39,8 @@ export default defineConfig({
   scopedStyleStrategy: "where",
   output: 'server',
   adapter: vercel({
-    webAnalytics: { enabled: true }
-  }),
+    webAnalytics: {
+      enabled: true
+    }
+  })
 });
