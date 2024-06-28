@@ -1,3 +1,2 @@
-yum update -y
-yum install -y d2
+curl -fsSL https://d2lang.com/install.sh | sh -s --
 npm run build
