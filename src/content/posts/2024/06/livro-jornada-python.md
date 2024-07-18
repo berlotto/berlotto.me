@@ -1,6 +1,6 @@
 ---
 title: "Livro Jornada Python"
-description: "Descubra a Magia da 'Jornada Pytho': Uma Viagem Colaborativa e Inspiradora"
+description: "Descubra a Magia da 'Jornada Python': Uma Viagem Colaborativa e Inspiradora"
 date: 2024-06-22
 category: "livro"
 postSlug: livro-jornada-python-jornada-colaborativa
