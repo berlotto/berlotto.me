@@ -3,9 +3,10 @@ export interface Props {
   name: string;
   count?: number;
   size?: "sm" | "lg";
+  link: string;
 }
 
-const { name, count, size = "sm" } = Astro.props;
+const { name, count, size = "sm", link="/tags/" } = Astro.props;
 ---
 
 <li
@@ -14,7 +15,7 @@ const { name, count, size = "sm" } = Astro.props;
   }`}
 >
   <a
-    href={`/tags/${name.toLowerCase()}/`}
+    href={`${link}${name.toLowerCase()}/`}
     transition:name={name.toLowerCase()}
     class={`${size === "sm" ? "text-sm" : "text-lg"} pr-2 group`}
   >

@@ -2,7 +2,7 @@
 title: "[Série] A Arte de Gerenciar Dados: Explorando Soluções de Armazenamento para Projetos de Sucesso"
 description: "Descubra como escolher a melhor tecnologia para armazenar e gerenciar seus dados, em busca de eficiência, escalabilidade e inovação"
 date: 2024-06-25
-category: "database"
+category: "Banco de Dados"
 postSlug: a-arte-de-gerenciar-dados-explorando-solucoes-de-armazenamento-para-projetos-de-sucesso
 tags:
   [

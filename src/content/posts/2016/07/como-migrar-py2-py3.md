@@ -2,7 +2,7 @@
 title: "Como migrar seu código para Python 3"
 excerpt: "Saiba o que é necessário fazer para ter seu código atualizado direitinho"
 date: 2016-07-05
-category: "technology"
+category: "Python"
 tags: [python, migração, python2, python3, ferramentas]
 ---
 

@@ -1,0 +1,49 @@
+---
+import getUniqueCategories from "@utils/getUniqueCategories";
+import { getCollection } from "astro:content";
+
+const posts = await getCollection("posts");
+let categories = getUniqueCategories(posts)
+// let categories = posts.map(post => post.data.category)
+
+function capitalizeFirstLetter(str: string): string {
+    return str.slice(0, 1).toUpperCase() + str.slice(1);
+}
+
+---
+
+<ul class="lista-palavras">
+    {
+         categories.map( cat => 
+         <li><a href=`/categories/${cat}`}>{capitalizeFirstLetter(cat)}</a></li> 
+        )
+    }
+</ul>
+
+<style>
+    .lista-palavras {
+        display: flex;
+        list-style: none;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 0;
+        margin: 0;
+    }
+
+    .lista-palavras li {
+        flex-grow: 1;
+        background-color: #f0f0f0; /* Cor de fundo da lista */
+        border: 1px solid #ddd; /* Borda da lista */
+        padding: 10px 20px;
+        margin: 5px;
+        border-radius: 5px; /* Borda arredondada */
+        cursor: pointer;
+        text-align: center;
+    }
+
+    .lista-palavras li:hover {
+        background-color: #e0e0e0; /* Cor de fundo ao passar o mouse */
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra para destacar */
+        transform: translateY(-2px); /* Levanta levemente o elemento */
+    }
+</style>

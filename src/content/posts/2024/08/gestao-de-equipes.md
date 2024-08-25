@@ -2,7 +2,8 @@
 title: "Entendendo a Gestão de Equipes de Alta Performance e Liderança de Excelência"
 description: "Como Formar, Liderar e Sustentar Equipes de Alta Performance no Desenvolvimento de Software"
 date: 2024-08-12
-category: "gestao"
+category: "Gestão"
+featured: true
 postSlug: entendendo-a-gestao-de-equipes-de-alta-performance-e-lideranca-de-excelencia
 tags: [gestao, performance, equipes, pessoas, desenvolvedores, colaboradores]
 ---

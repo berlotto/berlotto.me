@@ -2,7 +2,7 @@
 title: "Freelancer e home office — Faça o melhor"
 excerpt: "Não é fácil pegar o ritmo de ser freelancer, muitas dificuldades irão surgir, porém com dedicação se pode sim chegar ao sucesso de um micro empreendedor"
 date: 2016-04-29
-category: "technology"
+category: "Carreira"
 tags: [freelance, homeoffice, projetos, mei, organizacao]
 ---
 

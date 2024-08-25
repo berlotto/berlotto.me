@@ -2,7 +2,7 @@
 title: "[Série] A Arte de Gerenciar Dados: Bancos de dados relacionais"
 description: "Descubra como escolher a melhor tecnologia para armazenar e gerenciar seus dados, em busca de eficiência, escalabilidade e inovação"
 date: 2024-06-28
-category: "database"
+category: "Banco de Dados"
 postSlug: a-arte-de-gerenciar-dados-bancos-de-dados-relacionais
 tags:
   [

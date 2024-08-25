@@ -2,7 +2,7 @@
 title: "Ciência de Dados - Não use o anaconda"
 description: "Entenda porque decidi nao usar mais o anaconda"
 date: 2024-05-24
-category: "datascience"
+category: "Ciência de Dados"
 postSlug: ciencia-de-dados-nao-use-anaconda-use-jupyter
 tags: [datascience, anaconda, python, jupyter, matematica, tools]
 ---

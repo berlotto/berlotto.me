@@ -2,7 +2,7 @@
 title: "Princípios da Arquitetura de Software"
 description: "Entende porque esta matéria é tão importante na vida de um produto de software"
 date: 2024-05-28
-category: "arquitetura"
+category: "Arquitetura de Software"
 postSlug: principios-arquitetura-software
 tags: [arquitetura, solução, clean-arquitecture, solid]
 ---

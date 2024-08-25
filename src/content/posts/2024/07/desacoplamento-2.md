@@ -2,7 +2,7 @@
 title: "Desacoplamento de Componentes e Camadas"
 description: "Entenda por que as interfaces são tão importantes neste processo"
 date: 2024-07-22
-category: "arquitetura"
+category: "Arquitetura de Software"
 postSlug: desacoplamento-de-componentes-e-camadas
 tags: [arquitetura, desacoplamento, camadas]
 ---

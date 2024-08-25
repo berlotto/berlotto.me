@@ -1,0 +1,35 @@
+---
+import { getCollection } from "astro:content";
+import Header from "@components/Header.astro";
+import Footer from "@components/Footer.astro";
+import Layout from "@layouts/Layout.astro";
+import Main from "@layouts/Main.astro";
+import Tag from "@components/Tag.astro";
+import { slugifyStr } from "../../utils/slugify";
+import { SITE } from "@config";
+import getUniqueCategories from "@utils/getUniqueCategories";
+
+const posts = await getCollection("posts");
+
+let categoryCounts : { [key: string]: any } = {};
+
+posts.forEach(post => {
+    let category = slugifyStr(post.data.category);
+    categoryCounts[category] = (categoryCounts[category] || 0) + 1;
+})
+
+var categories = Object.keys(categoryCounts);
+categories.sort(function(a, b) {
+    return categoryCounts[b] - categoryCounts[a]
+});
+---
+
+<Layout title={`Categorias | ${SITE.title}`}>
+  <Header activeNav="categories" />
+  <Main pageTitle="Categorias" pageDesc="Todas as categorias de postagens">
+    <ul>
+      {categories.map(category => <Tag link="/categories/" name={category} count={categoryCounts[category]}size="lg" />)}
+    </ul>
+  </Main>
+  <Footer />
+</Layout>

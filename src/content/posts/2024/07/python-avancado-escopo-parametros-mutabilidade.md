@@ -2,7 +2,7 @@
 title: "Python Avançado - Mutabilidade e escopo"
 description: "Descubra as diferentes abordagens NoSQL para armazenar e gerenciar dados, suas vantagens, desvantagens e exemplos práticos em Python."
 date: 2024-07-29
-category: "python"
+category: "Python"
 postSlug: mutabilidade-escopo-passagem-de-parametros
 tags: [python, avançado, escopo, mutabilidade]
 ---

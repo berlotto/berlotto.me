@@ -2,7 +2,7 @@
 title: "Quero iniciar a programar, por qual linguagem eu começo ?"
 excerpt: "Algumas dicas de onde começar na carreira de programação"
 date: 2016-08-23
-category: "carreira"
+category: "Carreira"
 tags: [python, programacao, carreira, iniciante]
 ---
 

@@ -10,7 +10,7 @@ import { SITE } from "@config";
 
 const posts = await getCollection("posts");
 
-let tagCounts = {};
+let tagCounts: { [key: string]: any } = {};
 
 posts.forEach(post => {
   post.data.tags.forEach(tag => {

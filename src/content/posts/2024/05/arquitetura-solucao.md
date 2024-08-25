@@ -2,7 +2,7 @@
 title: "Arquitetura de solução"
 description: "Uma breve introdução"
 date: 2022-12-29
-category: "arquitetura"
+category: "Arquitetura de Software"
 postSlug: arquitetura-solucao-introducao
 tags: [arquitetura, solução, estrategia]
 ---

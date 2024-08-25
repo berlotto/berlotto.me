@@ -2,7 +2,7 @@
 title: "Estratégia de Produto para Arquitetos"
 description: "Como o conhecimento de um arquiteto influencia a construção de um bom produto de software"
 date: 2024-06-11
-category: "produto"
+category: "Produto"
 postSlug: estrategia-de-produto-para-arquitetos
 tags: [arquitetura, produto, estrategia, conhecimento, qualidade]
 ---
