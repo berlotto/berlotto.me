@@ -4,7 +4,6 @@ import "@styles/base.css";
 import { ViewTransitions } from "astro:transitions";
 import  SpeedInsights  from "@vercel/speed-insights/astro"
 
-const googleSiteVerification = import.meta.env.PUBLIC_GOOGLE_SITE_VERIFICATION;
 
 export interface Props {
   title?: string;
@@ -97,7 +96,6 @@ const socialImageURL = new URL(
   </head>
   <body>
     <slot />
-
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KTKVM3W6"
       height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>

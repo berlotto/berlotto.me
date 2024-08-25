@@ -58,9 +58,19 @@ const relatedPosts = getRelatedPosts(allPosts, slug, tags);
   </div>
   <main id="main-content">
     <h1 transition:name={slug} class="post-title">{title}</h1>
+
+    <div class="info-container">
+      <div class="coluna">
+        <p class="my-2">{remarkPluginFrontmatter.minutesRead}</p>
+      </div>
+      <div class="coluna">
+        <Datetime datetime={date} size="lg" className="my-2" />
+      </div>
+      <div class="coluna text-right">
+        <p class="my-2">Categoria: {post.data.category}</p>
+      </div>
+    </div>
     
-    <p class="my-2">{remarkPluginFrontmatter.minutesRead}</p>
-    <Datetime datetime={date} size="lg" className="my-2" />
      
     <article id="article" role="article" class="prose mx-auto mt-8 max-w-3xl">
       <Content />
@@ -97,5 +107,28 @@ const relatedPosts = getRelatedPosts(allPosts, slug, tags);
   }
   .tags-container {
     @apply my-8;
+  }
+  .info-container {
+    display: flex; /* Transforma o elemento em um container flex */
+    justify-content: space-between;
+    width: 100%;
+  }
+  .text-right{
+    align-items: flex-end;
+  }
+  .coluna {
+    flex: 1; 
+    display: flex;
+    flex-direction: column; /* Define a direção dos itens como coluna */
+    /* align-items: flex-start; */
+  }
+
+  .categoria{
+    background-color: #f0f0f0; /* Cor de fundo da lista */
+    border: 1px solid #ddd; /* Borda da lista */
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px; /* Borda arredondada */
+    cursor: pointer;
   }
 </style>

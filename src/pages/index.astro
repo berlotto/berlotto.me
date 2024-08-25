@@ -19,13 +19,11 @@ const featuredPosts = sortedPosts.filter(({ data }) => data.featured);
 
 const socialCount = SOCIALS.filter(social => social.active).length;
 
-// let categories = posts.map(post => post.data.category)
-
 ---
 
 <Layout>
   <Header />
-  <main id="main-content">
+  <main id="main-content" >
     <section id="hero">
       <h1 class="mr-2">{SITE.desc}</h1>
       <p>

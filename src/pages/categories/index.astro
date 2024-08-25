@@ -14,7 +14,7 @@ const posts = await getCollection("posts");
 let categoryCounts : { [key: string]: any } = {};
 
 posts.forEach(post => {
-    let category = slugifyStr(post.data.category);
+    let category = post.data.category;
     categoryCounts[category] = (categoryCounts[category] || 0) + 1;
 })
 
