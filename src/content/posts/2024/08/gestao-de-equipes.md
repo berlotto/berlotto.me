@@ -4,6 +4,7 @@ description: "Como Formar, Liderar e Sustentar Equipes de Alta Performance no De
 date: 2024-08-12
 category: "Gestão"
 featured: true
+featuredImage: ./capa.jpg
 postSlug: entendendo-a-gestao-de-equipes-de-alta-performance-e-lideranca-de-excelencia
 tags: [gestao, performance, equipes, pessoas, desenvolvedores, colaboradores]
 ---

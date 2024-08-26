@@ -11,6 +11,7 @@ import Socials from "@components/Socials.astro";
 import getSortedPosts from "@utils/getSortedPosts";
 import slugify from "@utils/slugify";
 import { SOCIALS, SITE } from "@config";
+import { Image, Picture } from 'astro:assets';
 
 const posts = await getCollection("posts");
 
@@ -56,11 +57,30 @@ const socialCount = SOCIALS.filter(social => social.active).length;
             <h2>Destaques</h2>
             <ul>
               {featuredPosts.map(({ data }) => (
-                <Card
-                  href={`/posts/${slugify(data)}/`}
-                  frontmatter={data}
-                  secHeading={false}
-                />
+
+              <div class="featured">
+                <div class="image">
+                  <Picture
+                    src={data.featuredImage}
+                    alt=""
+                    densities={[1.5, 2]}
+                    formats={['avif', 'webp']}
+                    fallbackFormat="jpeg"
+                    loading="lazy"
+                    decoding="async"
+                    fetchpriority="high"
+                  />
+                </div>
+                <div class="info">                  
+                  <Card
+                    href={`/posts/${slugify(data)}/`}
+                    frontmatter={data}
+                    secHeading={false}
+                  />
+                </div>
+              </div>
+
+
               ))}
             </ul>
           </section>
@@ -138,5 +158,27 @@ const socialCount = SOCIALS.filter(social => social.active).length;
   }
   .all-posts-btn-wrapper {
     @apply my-8 text-center;
+  }
+
+  .featured {
+    display: flex; /* Transforma o elemento em um container flex */
+    justify-content: space-between;
+    width: 100%;
+  }
+  .text-right{
+    align-items: flex-end;
+  }
+  .featured .image, .featured .info {
+    flex: 1; 
+    display: flex;
+    flex-direction: column; /* Define a direção dos itens como coluna */
+    /* align-items: flex-start; */
+  }
+  .featured .image {
+    flex-grow: 1;
+  }
+  .featured .info {
+    padding-left: 15px;
+    flex-grow: 2;
   }
 </style>
