@@ -1,7 +1,7 @@
 ---
 title: "Desbravando o Futuro das LLMs: O Poder, os Desafios e Como Transformar a Tecnologia em Soluções Reais - p2"
 description: "Explorando o Impacto das LLMs no Desenvolvimento de Produtos, a Evolução do Mercado de Trabalho e as Complexidades de Compliance e Legislação"
-date: 2024-08-31
+date: 2024-08-30
 category: "Produto"
 featured: true
 featuredImage: ./llms2.webp
