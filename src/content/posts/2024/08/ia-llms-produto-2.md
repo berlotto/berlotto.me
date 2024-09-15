@@ -3,7 +3,7 @@ title: "Desbravando o Futuro das LLMs: O Poder, os Desafios e Como Transformar a
 description: "Explorando o Impacto das LLMs no Desenvolvimento de Produtos, a Evolução do Mercado de Trabalho e as Complexidades de Compliance e Legislação"
 date: 2024-08-30
 category: "Produto"
-featured: true
+featured: false
 featuredImage: ./llms2.webp
 postSlug: como-transformar-solucoes-de-ia-generativa-em-produto-parte-2
 tags: [gestao, performance, equipes, pessoas, desenvolvedores, colaboradores]
