@@ -54,13 +54,16 @@ Além disso, o suporte para **multithreading** e **multiprocessing** permite que
 
 ### Python por Números: Dados sobre a Popularidade da Linguagem
 
-O crescimento de Python é respaldado por números impressionantes. Segundo uma pesquisa recente do **Stack Overflow Developer Survey**, Python está entre as linguagens mais amadas e com maior demanda de aprendizado. Além disso, dados do **TIOBE Index** mostram um aumento constante na popularidade, com Python alcançando o primeiro lugar em 2021 e mantendo a liderança desde então.
+O crescimento de Python é respaldado por números impressionantes. Segundo uma pesquisa recente do [**Stack Overflow Developer Survey**](https://survey.stackoverflow.co/2024/technology/), Python está entre as linguagens mais amadas e com maior demanda de aprendizado. Além disso, dados do [**TIOBE Index**](https://www.tiobe.com/tiobe-index/) mostram um aumento constante na popularidade, com Python alcançando o primeiro lugar em 2021 e mantendo a liderança desde então.
 
 A popularidade de Python no mercado de trabalho também é um ponto a considerar: muitas vagas de desenvolvedor de software hoje requerem experiência com Python, especialmente em áreas como data science e machine learning, que registram uma crescente demanda.
 
 **Python no Octoverse 2024: A Linguagem Mais Utilizada do GitHub**
 
-O relatório **GitHub Octoverse 2024** trouxe uma novidade marcante: Python ultrapassou JavaScript, assumindo a liderança como a linguagem mais usada na plataforma. Esse dado reflete o crescente uso de Python, especialmente impulsionado por sua presença em áreas como inteligência artificial, ciência de dados e aprendizado de máquina. A preferência por Python está fortemente associada ao desenvolvimento dessas áreas emergentes, que exigem uma linguagem tanto fácil de ler quanto poderosa o suficiente para manipular grandes volumes de dados.
+O relatório [**GitHub Octoverse 2024**](https://github.blog/news-insights/octoverse/octoverse-2024/) trouxe uma novidade marcante: Python ultrapassou JavaScript, assumindo a liderança como a linguagem mais usada na plataforma. Esse dado reflete o crescente uso de Python, especialmente impulsionado por sua presença em áreas como inteligência artificial, ciência de dados e aprendizado de máquina. A preferência por Python está fortemente associada ao desenvolvimento dessas áreas emergentes, que exigem uma linguagem tanto fácil de ler quanto poderosa o suficiente para manipular grandes volumes de dados.
+
+![Image of a chart with python in first position, comparig others](GitHub-Octoverse-2024-top-programming-languages.webp)
+_image fron github.blog, Octoverse 2024_
 
 ### Python e o Crescimento da Inteligência Artificial
 
@@ -89,3 +92,7 @@ O impacto dessa liderança de Python no GitHub sinaliza uma mudança de paradigm
 Python se firmou como uma linguagem versátil e poderosa, utilizada em diversas indústrias e por uma comunidade diversificada e acolhedora. Seu uso por empresas líderes de mercado, como Google e Netflix, demonstra seu valor como ferramenta confiável e adaptável. A linguagem continua a evoluir de forma organizada através das PEPs, e a Python Software Foundation mantém o compromisso de promover uma comunidade inclusiva e inovadora.
 
 Python é muito mais do que uma linguagem de programação; é uma ferramenta transformadora que ajuda a resolver problemas reais, independente da área ou da complexidade do projeto. Com uma curva de aprendizado acessível, um futuro promissor em machine learning e data science, e uma comunidade vibrante, Python continua a ser a escolha ideal para quem deseja programar o futuro.
+
+### DICA
+
+Livros como [Python Flluent](https://pythonfluente.com/), do Luciano Ramalho e [**Jornada Python**](https://amzn.to/4fztSgK), da Jornada Colaborativa, pode te mostrar muito mais sobre esse mundo que falamos aqui.
