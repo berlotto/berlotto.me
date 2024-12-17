@@ -5,7 +5,7 @@ date: 2024-12-17
 category: "Arquitetura de Software"
 featured: false
 # featuredImage: ./queen.jpeg
-postSlug: python-o-segredo-por-tras-da-linguagem-que-conquista-programadores-e-empresas
+postSlug: desvendando-o-poder-das-ap-is-guia-completo-de-design-implementacao-e-documentacao
 tags: [python, apis, arquitetura, testes, design, futuro, segurança]
 ---
 
