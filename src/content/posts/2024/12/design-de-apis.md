@@ -6,7 +6,7 @@ category: "Arquitetura de Software"
 featured: false
 # featuredImage: ./queen.jpeg
 postSlug: python-o-segredo-por-tras-da-linguagem-que-conquista-programadores-e-empresas
-tags: [python, linguagem, ia, comunidade, elegancia, futuro, velocidade]
+tags: [python, apis, arquitetura, testes, design, futuro, segurança]
 ---
 
 ### **Introdução**
